@@ -1,0 +1,23 @@
+{
+    "name": "Spring Test",
+    "dockerComposeFile": "compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "devuser",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-lombok",
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-boot-dev-pack",
+                "streetsidesoftware.code-spell-checker",
+                "mechatroner.rainbow-csv",
+                "oderwat.indent-rainbow",
+                "ckolkman.vscode-postgres"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    }
+}

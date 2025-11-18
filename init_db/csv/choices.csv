@@ -1,0 +1,25 @@
+id,quiz_id,choice_text,is_correct,label
+1,1,"H2O",true,A
+2,1,"O2",false,B
+3,1,"HO",false,C
+4,1,"H2",false,D
+5,2,"7",false,A
+6,2,"8",true,B
+7,2,"9",false,C
+8,2,"6",false,D
+9,3,"Christopher Columbus",true,A
+10,3,"Vasco da Gama",false,B
+11,3,"Ferdinand Magellan",false,C
+12,3,"Leif Erikson",false,D
+13,4,"1918",false,A
+14,4,"1939",false,B
+15,4,"1945",true,C
+16,4,"1965",false,D
+17,5,"Kotlin",true,A
+18,5,"Swift",false,B
+19,5,"Ruby",false,C
+20,5,"C#",false,D
+21,6,"Structured Query Language",true,A
+22,6,"Simple Query Language",false,B
+23,6,"Standard Query List",false,C
+24,6,"Sequential Query Language",false,D

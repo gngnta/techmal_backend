@@ -1,0 +1,23 @@
+name: techmal
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/app.Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ..:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+    tty: true
+
+  db:
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/db.Dockerfile
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
