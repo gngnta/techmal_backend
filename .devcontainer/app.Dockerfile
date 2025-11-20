@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     sudo \
     && rm -rf /var/lib/apt/lists/*
 
+ARG USERNAME=dev
 RUN userdel -r ubuntu || true && \
-    useradd -m -s /bin/bash devuser && \
-    echo "devuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+    useradd -m -s /bin/bash ${USERNAME} && \
+    echo "${USERNAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+USER ${USERNAME}

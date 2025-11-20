@@ -1,22 +1,46 @@
 {
-    "name": "Spring Test",
+    "name": "Techmal Backend Dev Container",
     "dockerComposeFile": "compose.yaml",
     "service": "app",
     "workspaceFolder": "/workspace",
-    "remoteUser": "devuser",
     "customizations": {
         "vscode": {
             "extensions": [
-                "vscjava.vscode-lombok",
                 "vscjava.vscode-java-pack",
                 "vmware.vscode-boot-dev-pack",
-                "streetsidesoftware.code-spell-checker",
-                "mechatroner.rainbow-csv",
+                "vscjava.vscode-lombok",
+                "ckolkman.vscode-postgres",
                 "oderwat.indent-rainbow",
-                "ckolkman.vscode-postgres"
+                "mechatroner.rainbow-csv",
+                "42Crunch.vscode-openapi",
+                "streetsidesoftware.code-spell-checker",
+                "JoseVSeb.google-java-format-for-vs-code"
             ],
             "settings": {
-                "editor.formatOnSave": true
+                "editor.formatOnSave": true,
+                "[java]": {
+                    "editor.defaultFormatter": "josevseb.google-java-format-for-vs-code"
+                },
+                "java.format.settings.google.version": "latest",
+                "java.format.settings.google.extra": "--aosp",
+                "java.configuration.runtimes": [
+                    {
+                        "name": "JavaSE-21",
+                        "path": "/opt/java/openjdk",
+                        "default": true
+                    }
+                ],
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.jdt.ls.java.home": "/opt/java/openjdk",
+                "java.import.gradle.java.home": "/opt/java/openjdk",
+                "java.import.gradle.user.home": "/home/dev/.gradle",
+                "spring-boot.ls.java.home": "/opt/java/openjdk",
+                "cSpell.words": [
+                    "techmal",
+                    "techmals",
+                    "Techmal",
+                    "Techmals"
+                ]
             }
         }
     }
